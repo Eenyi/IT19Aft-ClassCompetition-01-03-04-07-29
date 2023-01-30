@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Quiz</string>
+    <string name="kalma">کلمہ</string>
+    <string name="droodshareef">درود شریف</string>
+    <string name="astagfaar">استغفار</string>
+    <string name="counter">Counter</string>
+    <string name="recite">Recite</string>
+</resources>
