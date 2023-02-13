@@ -112,11 +112,15 @@ public class Home extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 Tasbeeh def = (Tasbeeh) adapterView.getAdapter().getItem(i);
+                Log.d("Tasbeeh Data",def.getDate());
+                Log.d("Tasbeeh Data",def.getAstagfaar().toString());
+                Log.d("Tasbeeh Data",def.getDroodshreef().toString());
+                Log.d("Tasbeeh Data",def.getKalma().toString());
                 Intent intent = new Intent(Home.this, ScoreTasbeeh.class);
                 intent.putExtra("DATE", def.getDate());
-                intent.putExtra("KALMA", def.getKalma());
-                intent.putExtra("DROODSHAREEF", def.getDroodshreef());
-                intent.putExtra("ASTAGFAR", def.getAstagfaar());
+                intent.putExtra("KALMA",def.getKalma().toString());
+                intent.putExtra("DROODSHAREEF", def.getDroodshreef().toString());
+                intent.putExtra("ASTAGFAR", def.getAstagfaar().toString());
                 startActivity(intent);
             }
         });
